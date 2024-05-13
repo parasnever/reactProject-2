@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+// import App from './App.tsx'
 import './index.css'
+import { Score } from './components/Counter'
+import styles from "./components/main.module.css"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
@@ -15,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   }}
   >Quiz game</h2>
 
-  <div>
+  <div className={styles.scores_container}>
+    <Score teamName='A' counterName='Score'/>
+    <Score teamName='B' counterName='Score'/>
 
   </div>
   </>

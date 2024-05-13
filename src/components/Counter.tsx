@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from
+import styles from "./Counter.module.css"
 
 /***
  * Quiz between two teams
@@ -52,7 +52,30 @@ export function ScoreB(){
     const [count, setCount] = useState(10)
 
     const increaseCountBy1 = () =>{
-        setCount(co)
+        setCount(count + 1)
     }
+    const decreaseCountBy1 = ()=>{
+      setCount(count -1)
+    }
+    const resetCountTo0 = () =>{
+      setCount(0)
+    }
+    
+return(
+  <div>
+    <h1>TEAM B: SCORE</h1>
+
+    <div>
+      <p>{count}</p>
+    </div>
+
+    <div>
+      <button onClick={increaseCountBy1}>+1</button>
+      <button onClick={decreaseCountBy1}>-1</button>
+      <button onClick={resetCountTo0}>0</button>
+    </div>
+  </div>
+)
+
 
 }
