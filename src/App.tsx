@@ -1,4 +1,6 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
+import { Navbar } from "./components/Navbar"
+import {PostList} from
 const router = createBrowserRouter([
   {
     path : "/",
