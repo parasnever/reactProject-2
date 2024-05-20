@@ -12,3 +12,13 @@ body{
   box-sizing: border-box;
 
 }
+.modal-todo {
+  position:  fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
