@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TPost } from "../types";
 import { Link  } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
-import { deletePost } from "./delete-posts"; 
+import { deletePost } from "../data/delete-posts"; 
 
 
 export function PostCard(props:{

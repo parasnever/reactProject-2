@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { usePaginatonPostCtx } from "../store/pagination-posts";
 import styles from "./PostList.module.css"
-
+import { PostCard } from "./PostCard";
+import { fetchPosts } from "../data/fetch-posts";
+import { PerPageSelector } from "./PerPageSelector";
+// import { GlobalTextPostList } from "./GlobalTextPOstList";
 
 export function PostList(){
     const {page, setPage, posts, perPage,setPosts}= usePaginatonPostCtx()
@@ -77,7 +80,7 @@ export function PostList(){
                 <PerPageSelector />
 
             </div>
-            <GlobalTextPostList />
+            {/* <GlobalTextPostList /> */}
         </div>
     )
     

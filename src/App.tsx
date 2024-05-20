@@ -3,7 +3,7 @@ import { Navbar } from "./components/Navbar"
 import { PostList } from "./components/PostList"
 import { TodosList } from "./components/TodosList"
 import { PostPaginationProvider } from "./store/pagination-posts"
-// import {PostDetail } from "./components/PostDetail"
+import {PostDetail } from "./components/PostDetail"
 const router = createBrowserRouter([
   {
     path : "/",
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path:"/posts/:postId",
-    // element: <PostDetail />
+    element: <PostDetail />
   }
 ])
 function App (){
