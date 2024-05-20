@@ -8,7 +8,7 @@ type TPostPaginationCtx = {
     page: number
     setPage: React.Dispatch<React.SetStateAction<number>>
     perPage: number;
-    setPerPage:
+    setPerPage:React.Dispatch<React.SetStateAction<number>>
 
 }
 
